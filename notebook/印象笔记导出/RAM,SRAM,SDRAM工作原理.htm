@@ -1,0 +1,1337 @@
+<http://www.csdn.net/?ref=toolbar>
+
+<http://blog.csdn.net/?ref=toolbar_logo>
+
+  * 登录  <https://passport.csdn.net/account/login?ref=toolbar>| 注册
+    <http://passport.csdn.net/account/mobileregister?ref=toolbar&action=mobileRegister>
+  *
+
+  *
+    收藏成功
+    确定
+    收藏失败，请重新收藏
+    确定
+    *标题
+
+    **标题不能为空
+    网址
+
+    标签
+
+    位置
+
+    个人主页 - 我的知识 <http://my.csdn.net/>
+    同时保存至：
+
+    选择知识图谱 //
+      o 选择知识图谱
+    新建？ <http://lib.csdn.net/my/create/structure>
+    公开
+
+    取消 收藏
+
+  *
+  *
+
+    //分享资讯 <http://geek.csdn.net/news/expert?ref=toolbar>
+    //传PPT/文档
+
+    <http://u.download.csdn.net/upload?ref=toolbar>
+    //提问题
+
+    <http://bbs.csdn.net/topics/new?ref=toolbar>
+    //写博客
+
+    <http://write.blog.csdn.net/postedit?ref=toolbar>
+    //传资源
+
+    <http://u.download.csdn.net/upload?ref=toolbar>
+    //创建项目
+
+    <https://code.csdn.net/projects/new?ref=toolbar>
+    //创建代码片
+
+    <https://code.csdn.net/snippets/new?ref=toolbar>
+
+  *
+
+    <http://my.csdn.net/?ref=toolbar>
+        <http://my.csdn.net/?ref=toolbar>设置昵称<https:
+        //passport.csdn.net/account/profile>编辑自我介绍，让更多人了解你
+        <http://my.csdn.net/>
+
+    帐号设置
+
+    <http://my.csdn.net/my/account/changepwd?ref=toolbar>退出
+
+    <https://passport.csdn.net/account/logout?ref=toolbar>
+  *
+
+
+              社区
+
+        博客 <http://blog.csdn.net/?ref=toolbar>
+        论坛 <http://bbs.csdn.net/?ref=toolbar>
+        下载 <http://download.csdn.net/?ref=toolbar>
+        知识库 <http://lib.csdn.net/?ref=toolbar>
+        技术问答 <http://ask.csdn.net/?ref=toolbar>
+        极客头条 <http://geek.csdn.net/?ref=toolbar>
+        英雄会 <http://hero.csdn.net/?ref=toolbar>
+
+
+              服务
+
+        JOB <http://job.csdn.net/?ref=toolbar>
+        学院 <http://edu.csdn.net/?ref=toolbar>
+        CODE <https://code.csdn.net/?ref=toolbar>
+        活动 <http://huiyi.csdn.net/?ref=toolbar>
+        CSTO <http://www.csto.com/?ref=toolbar>
+        C币兑换 <http://mall.csdn.net/?ref=toolbar>
+
+
+              俱乐部
+
+        CTO俱乐部 <http://cto.csdn.net/?ref=toolbar>
+        高校俱乐部 <http://student.csdn.net/?ref=toolbar>
+
+
+    shijiemazhenda的专栏 <http://blog.csdn.net/shijiemazhenda>
+
+
+  * 目录视图 <http://blog.csdn.net/shijiemazhenda?viewmode=contents>
+  * 摘要视图 <http://blog.csdn.net/shijiemazhenda?viewmode=list>
+  * 订阅 <http://blog.csdn.net/shijiemazhenda/rss/list>
+
+*【活动】2017 CSDN博客专栏评选*
+<http://blog.csdn.net/blogdevteam/article/details/71710010>      *【评论
+送书】SQL优化、深度学习、数据科学家*
+<http://blog.csdn.net/broadview2006/article/details/72677185>      *CSDN
+日报20170525 ——《狗蛋的寻亲之路，结识嵌入式世界的那只狗》 *
+<http://blog.csdn.net/blogdevteam/article/details/72725354>      *Python
+创意编程活动结果公布*
+<http://blog.csdn.net/blogdevteam/article/details/72626843>
+
+
+  RAM,SRAM,SDRAM工作原理（很长）
+<http://blog.csdn.net/shijiemazhenda/article/details/6774914>
+
+标签： 工作 <http://www.csdn.net/tag/%e5%b7%a5%e4%bd%9c>存储
+<http://www.csdn.net/tag/%e5%ad%98%e5%82%a8>64bit
+<http://www.csdn.net/tag/64bit>command <http://www.csdn.net/tag/command>
+制造 <http://www.csdn.net/tag/%e5%88%b6%e9%80%a0>vss
+<http://www.csdn.net/tag/vss>
+2011-09-14 16:07 4372人阅读 评论 <#comments>(0) 收藏
+<javascript:void(0);> 举报 <#report>
+本文章已收录于：
+分类：
+ARM/（3）/
+作者同类文章 <http://blog.csdn.net/shijiemazhenda/article/category/803542>
+/X
+
+/
+
+存储原理：
+
+　　为了便于不同层次的读者都能基本的理解本文，所以我先来介绍一下很多用户
+都知道的东西。RAM主要的作用就是存储代码和数据供CPU在需要的时候调用。但是
+这些数据并不是像用袋子盛米那么简单，更像是 图书馆
+<http://www.eefocus.com/blog/link2url.php?link=http%3A%2F
+%2Fwww.iask.com%2Fn%3Fk%3D%25CD%25BC%25CA%25E9%25B9%25DD>中用有格子的书
+架存放书籍一样，不但要放进去还要能够在需要的时候准确的调用出来，虽然都是
+书但是每本书是不同的。对于RAM等存储器来说也是一样的，虽然存储的都是代表0
+和1的代码，但是不同的组合就是不同的数据。
+
+　　让我们重新回到书和书架上来，如果有一个书架上有10行和10列格子（每行和
+每列都有0-9的编号），有100本书要存放在里面，那么我们使用一个行的编号＋一
+个列的编号就能确定某一本书的位置。如果已知这本书的编号87，那么我们首先锁
+定第8行，然后找到第7列就能准确的找到这本书了。在RAM存储器中也是利用了相
+似的原理。
+
+　　现在让我们回到RAM存储器上，对于RAM存储器而言数据总线是用来传入数据或
+者传出数据的。因为存储器中的存储空间是如果前面提到的存放图书的书架一样通
+过一定的规则定义的，所以我们可以通过这个规则来把数据存放到存储器上相应的
+位置，而进行这种定位的工作就要依靠地址总线来实现了。对于CPU来说，RAM就象
+是一条长长的有很多空格的细线，每个空格都有一个唯一的地址与之相对应。如果
+CPU想要从RAM中调用数据，它首先需要给地址总线发送地址数据定位要存取的数
+据，然后等待若干个时钟周期之后，数据总线就会把数据传输给CPU。下面的示意
+图可以帮助你很好的理解这个过程。
+
+
+菜鸟成长手册:详解内存工作原理及发展历程
+
+存储原理
+
+　　上图中的小园点代表RAM中的存储空间，每一个都有一个唯一的地址线同它相
+连。当地址解码器接收到地址总线送来的地址数据之后，它会根据这个数据定位
+CPU想要调用的数据所在的位置，然后数据总线就会把其中的数据传送到CPU。
+
+　　上面所列举的例子中CPU在一行数据中每次知识存取一个字节的数据，但是在
+现实世界中是不同的，通常CPU每次需要调用32bit或者是64bit的数据（这是根据
+不同计算机系统的数据总线的位宽所决定的）。如果数据总线是64bit的话，CPU就
+会在一个时间中存取8个字节的数据，因为每次还是存取1个字节的数据，64bit总
+线将不会显示出来任何的优势，women工作的效率将会降低很多。
+
+从“线”到“矩阵”
+
+ 
+
+　　如果RAM对于CPU来说仅仅是一条“线”的话，还不能体现实际的运行情况。因为
+如果实际情况真的是这样的话，在实际制造芯片的时候，会有很多实际的困难，特
+别是在需要设计大容量的RAM的时候。所以，一种更好的能够降低成本的方法是让
+存储信息的“空格”排列为很多行－－每个“空格”对应一个bit存储的位置。这样，
+如果要存储1024bits的数据，那么你只要使用32x32的矩阵就能够达到这个目的
+了。很明显，一个32x32的矩阵比一个1024bit的行设备更紧凑，实现起来也更加容
+易。请看下图：
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(2)
+
+　　知道了RAM的基本结构是什么样子的，我们就下面谈谈当存储字节的过程是怎
+样的：上面的示意图显示的也仅仅是最简单状态下的情况，也就是当内存条上仅仅
+只有一个RAM芯片的情况。对于X86处理器，它通过地址总线发出一个具有22位二进
+制数字的地址编码－－其中11位是行地址，另外11位是列地址，这是通过RAM地址
+接口进行分离的。行地址解码器（row decoder）将会首先确定行地址，然后列地
+址解码器（column decoder）将会确定列地址，这样就能确定唯一的存储数据的位
+置，然后该数据就会通过RAM数据接口将数据传到数据总线。另外，需要注意的
+是，RAM内部存储信息的矩阵并不是一个正方形的，也就是行和列的数目不是相同
+的－－行的数目比列的数目少。(后面我们在讨论DRAM的过程中会讲到为什么会这样)
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(2)
+
+　　上面的示意图粗略的概括了一个基本的SRAM芯片是如何工作的。SRAM是
+“static RAM（静态随机存储器）”的简称，之所以这样命名是因为当数据被存入其
+中后不会消失（同DRAM动态随机存储器是不同，DRAM必须在一定的时间内不停的刷
+新才能保持其中存储的数据）。一个SRAM单元通常由4-6只晶体管组成，当这个
+SRAM单元被赋予0或者1的状态之后，它会保持这个状态直到下次被赋予新的状态或
+者断电之后才会更改或者消失。SRAM的速度相对比较快，而且比较省电，但是存储
+1bit的信息需要4-6只晶体管制造成本太高了（DRAM只要1只晶体管就可以实现）。
+
+RAM芯片和SRAM芯片
+
+ 
+
+　　RAM芯片：
+
+　　前面的介绍都相对比较简单、抽象。下面我们会结合实际的RAM芯片进行介
+绍。在谈到这个问题的时候，我们会涉及到一个比较重要的技术：封装。你应该听
+说过诸如30线SIMMS、72线SIMMS和168线DIMMS或者RIMMs其中的一个或者几个术语
+吧。如果要解释这些术语之间的不同，就应该了解RAM的封装技术。
+
+　　SRAM芯片：
+
+　　早期的SRAM芯片采用了20线双列直插（DIP：Dual Inline Package）封装技
+术，它们之所以具有这么多的针脚，是因为它们必须：每个地址信号都需要一根信
+号线；一根数据输入线和一根数据输出线部分控制线(Write Enable, Chip
+Select)；线和电源线
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(3)
+
+　　上图显示的是SRAM芯片，但是并不是下面示意图中的SRAM芯片，下面的是一个
+16K x 1-bit SRAM芯片的针脚功能示意图：
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(3)
+
+　　A0-A13是地址输入信号引脚，CS是芯片选择引脚。在一个实际的系统中，一定
+具有很多片SRAM芯片，所以需要选择究竟从那一片SRAM芯片中写入或者读取数据。
+WE是写入启用引脚（如上表，在CS、WE上面的线我没有写入，表示低电平有效或者
+是逻辑0时有效）：当SRAM得到一个地址之后，它需要知道进行什么操作，究竟是
+写入还是读取，WE就是告诉SRAM要写入数据。Vcc是供电引脚。Din是数据输入引
+脚。Dout是数据输出引脚。GND是接地引脚
+
+Output：
+
+　　Enable（OE）：有的SRAM芯片中也有这个引脚，但是上面的图中并没有。这个
+引脚同WE引脚的功能是相对的，它是让SRAM知道要进行读取操作而不是写入操作。
+从Dout引脚读取1bit数据需要以下的步骤：
+SRAM读取操作：1)通过地址总线把要读取的bit的地址传送到相应的读取地址引脚
+(这个时候/WE引脚应该没有激活，所以SRAM知道它不应该执行写入操作)。2)激活
+/CS选择该SRAM芯片。3)激活/OE引脚让SRAM知道是读取操作。第三步之后，要读取
+的数据就会从DOut引脚传输到数据总线。怎么过程非常的简单吧？同样，写入1bit
+数据的过程也是非常的简单的。SRAM写入操作：1)通过地址总线确定要写入信息的
+位置(确定/OE引脚没有被激活）。2)通过数据总线将要写入的数据传输到Dout引
+脚。3)激活/CS引脚选择SRAM芯片。4)激活/WE引脚通知SRAM知道要尽心写入操作。
+
+　　经过上面的四个步骤之后，需要写入的数据就已经放在了需要写入的地方。
+
+DRAM芯片介绍
+
+ 
+
+　　现在我们知道了在一个简单的SRAM芯片中进行读写操作的步骤了了，然后我们
+来了解一下普通的DRAM芯片的工作情况。DRAM相对于SRAM来说更加复杂，因为在
+DRAM存储数据的过程中需要对于存储的信息不停的刷新，这也是它们之间最大的不
+同。下面让我们看看DRAM芯片的针脚的作用。
+
+　　最早、最简单也是最重要的一款DRAM芯片是Intel在1979年发布的2188，这款
+芯片是16Kx1 DRAM 18线DIP封装。“16K x 1”的部分意思告诉我们这款芯片可以存
+储16384个bit数据，在同一个时期可以同时进行1bit的读取或者写入操作。(很抱
+歉找不到这款芯片的实物图片，只好自己简单的画了一个示意图)。
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(4)
+
+ 
+
+　　上面的示意图可以看出，DRAM和SRAM之间有着明显的不同。首先你会看到地址
+引脚从14根变为7根，那么这颗16K DRAM是如何完成同16K SRAM一样的工作的呢？
+答案很简单，DRAM通过DRAM接口把地址一分为二，然后利用两个连续的时钟周期传
+输地址数据。这样就达到了使用一半的针脚实现同SGRAM同样的功能的目的，这种
+技术被称为多路技术（multiplexing）。
+
+　　那么为什么好减少地址引脚呢？这样做有什么好处呢？前面我们曾经介绍过，
+存储1bit的数据SRAM需要4-6个晶体管但是DRAM仅仅需要1个晶体管，那么这样同样
+容量的SRAM的体积比DRAM大至少4倍。这样就意味着你没有足够空间安放同样数量
+的引脚（因为针脚并没有因此减少4倍）。当然为了安装同样数量的针脚，也可以
+把芯片的体积加大，但是这样就提高芯片的生产成本和功耗，所以减少针脚数目也
+是必要的，对于现在的大容量DRAM芯片，多路寻址技术已经是必不可少的了。
+
+当然多路寻址技术也使得读写的过程更加复杂了，这样在设计的时候不仅仅DRAM芯
+片更加复杂了，DRAM接口也要更加复杂，在我们介绍DRAM读写过程之前，请大家看
+一张DRAM芯片内部结构示意图：
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(4)
+
+ 
+
+　　在上面的示意图中，你可以看到在DRAM结构中相对于SRAM多了两个部分：由
+/RAS (Row Address 
+Strobe：行地址脉冲选通器)引脚控制的行地址门闩线路（Row Address Latch）和
+由/CAS(Column Address Strobe：列地址脉冲选通器)引脚控制的列地址门闩线路
+（Column Address Latch）。DRAM读取过程：1)通过地址总线将行地址传输到地址
+引脚。2)/RAS引脚被激活，这样行地址被传送到行地址门闩线路中。3)行地址解码
+器根据接收到的数据选择相应的行。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(4)
+
+ 
+
+　　4)/WE引脚被确定不被激活，所以DRAM知道它不会进行写入操作。5)列地址通
+过地址总线传输到地址引脚。6)/CAS引脚被激活，这样列地址被传送到行地址门闩
+线路中。7)/CAS引脚同样还具有/OE引脚的功能，所以这个时候Dout引脚知道需要
+向外输出数据。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(4)
+
+ 
+
+　　8)/RAS和/CAS都不被激活，这样就可以进行下一个周期的数据操作了。其实
+DRAM的写入的过程和读取过程是基本一样的，所以如果你真的理解了上面的过程就
+能知道写入过程了，所以这里我就不赘述了。（只要把第4步改为/WE引脚被激活就
+可以了）。
+
+RAM基础知识
+
+ 
+
+　　我们已经提到过，DRAM同SRAM最大的不同就是不能比较长久的保持数据，这项
+特性使得这种存储介质对于我们几乎没有任何的作用。但是DRAM设计师利用刷新的
+技术使得DRAM称为了现在对于我们最有用处的存储介质。这里我仅仅简要的提及一
+下DRAM的刷新技术，因为在后面介绍FP、EDO等类型的内存的时候，你会发现它们
+具体的实现过程都是不同的。
+
+　　DRAM内仅仅能保持其内存储的电荷非常短暂的时间，所以它需要在其内的电荷
+消失之前就进行刷新直到下次写入数据或者计算机断电才停止。每次读写操作都能
+刷新DRAM内的电荷，所以DRAM就被设计为有规律的读取DRAM内的内容。这样做有下
+面几个好处。第一，仅仅使用/RAS激活每一行就可以达到全部刷新的目的；第
+二，DRAM控制器来控制刷新，这样可以防止刷新操作干扰有规律的读写操作。在文
+章的开始，我曾经说过一般行的数目比列的数据少。现在我可以告诉为什么会这样
+了，因为行越少用户刷新的时间就会越少。
+
+　　RAM模块基础：
+
+　　在前面的一节文章中我们对于DRAM和SRAM的基本工作原理做了一些简单的介
+绍，在我们所列举的例子中都是介绍了最基本的存储单元的工作模式，所以应该不
+难理解，看到很多朋友对于这个方面的东西很感兴趣，今天我就继续介绍关于
+RAM（Random Access Memory）的部分知识。理解这个部分知识，是更好的了解以
+后我们介绍各种RAM的实际工作情况的基础。
+
+　　在SRAM或者DRAM的每一个基本存储单位（也就是上一节中介绍用来存储1bit信
+息的存储单位）都只能存储0或者1这样的数据，而且在上一节中IDT6167和Intel
+2188芯片都仅仅只有Din（数据输入）和Dout（数据输出接口），而CPU存取数据的
+时候是按照字节（也就是8bit）来存储的，那么RAM究竟如何满足CPU的这样的要求
+呢？ 
+
+首先为了能存储1字节(8 bit)的信息,就需要8个1bit RAM基本存储单元堆叠在一
+起，这也意味着这8颗芯片被赋予了同样的地址。下面的示意图可以帮助你比较形
+象的了解这一点（下图所示的图例中仅仅画了4个存储单元，大家当成8个来看就可
+以了）。
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(5)
+
+ 
+
+　　通常这8颗1bit芯片是通过地址总线和数据总线在PCB（印刷电路板）上连接而
+成的，对于CPU来说它就是一颗8bit的RAM芯片，而不再是独立的8个1 bit芯片。在
+上图所示的地址总线位宽是22bit，这样这个地址总线所能控制的存储模块的容量
+应该是222=4194304bit,也就是4MB的容量；数据总线的位宽是8bit，就是通过刚才
+提到的8个1bit的基本存储单元的Dout并联在一起实现的－－这样也能够满足CPU的
+要求了。（对于这种存储颗粒我们称之为4194304 x 8模块或者4Mx8，注意这里的
+“M”不是“MByte”而是“Mbit”）。为了举例说明，我们用一条TI（德仪公司）出品的
+TM4100GAD8 SIMM内存为例来说明，因为这种内存的构造相对比较简单，便于大家
+理解。TM4100GAD8基于4M x 8模块制造，容量4MB，采用30线SIMM封装。如果前面
+我说的东西你看明白了，就应该知道这条内存采用了4Mx1 DRAM颗粒。下面的数据
+是我在TI官方网站上找到的（目前很少有公司的网站还提供自己以前产品的数
+据）：构造：4194304 × 8。工作电压：5-V。30线SIMM（Single In-Line Memory
+Module：SIMM）。采用8片4Mbit DRAM内存颗粒，塑料SOJs封装。长刷新期16
+ms(1024周期)。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(5)
+
+ 
+
+
+在上面的示意图中，A0–A10是地址输入引脚。/CAS:行地址脉冲选通器引脚。DQ1–
+DQ8：数据输入/数据输出引脚。NC：空信号引脚。/RAS：列地址脉冲选通器引脚。
+VSS：接地引脚。/W：写入启用引脚。VCC 5V供电引脚。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(5)
+
+ 
+
+　　上面的电路示意图应该能够让我们更加清楚的理解这个问题,TM4100GAD8由8片
+4096x1bit芯片组成,VCC和VSS为所有的芯片提供5v的电压。每个芯片都具有/RAS、
+/CAS、/W引脚同内存相应的引脚连通。每个芯片都具有不同的数据输出/输出接
+口。这样我们应该就能够知道RAM是如何满足CPU存取数据的需要的了。
+
+前面我们讲述的都是8bit的内存，现在这种东西我们基本上都接触不到了，更常用
+的是32bit、64bit或者128bit。由于前面我们已经讲到了4Mx1bit模块实现bit输入
+输出的方法，所以我们很容易想到我们把足够多的芯片放在一个模块中就可以了。
+不过在实际应用中，仅仅这样做还是不行的，这里就需要引入bank的概念，bank是
+由多个模块组成的。请看下面的示意图：
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(6)
+
+ 
+
+　　上面的示意图显示的是由4组8bit模块组成的一个bank，如果构成模块的是
+4194304 x 1芯片，那么每个模块的架构 <http://lib.csdn.net/base
+/architecture>应该是4194304x8(4MB)，这样4个模块就能组成一个位宽为32bit的
+bank，容量为16MB。当存储数据的时候，第一模块存储字节1,第二个模块存储字节
+2，第三个模块存储字节3，第四个模块存储字节4，第五个模块存储字节5……如此循
+环知道达到内存所能达到的最高容量。
+
+　　文章读到这里，我们应该能知道，当我们的系统使用这种类型的内存时，可以
+通过两种方式来增加这种类型内存的容量。第一种就是通过增加每一个独立模块的
+容量来增加bank的容量，另外一个方法就是增加bank的数目。这样如果让这种类型
+的内存的容量提升到32MB，可以把每个模块的容量从4MB提升到8MB或者增加bank的
+数目。
+
+　　前面我们用来举例的这种30线的SIMM一般是用在486级别的电脑上的，而现在
+的Pentium级别的电脑所使用的内存同这个是不同的。而截止到现在，我的这篇文
+章还没有涉及到我们目前所使用的内存，不过不要着急，相信充分的理解我现在所
+谈论的东西将有助于你理解以后的内容。不过这里可以先告诉大家的是Pentium级
+别的内存和486系统的内存之间的主要差异在于它们的RAM芯片。
+
+SIMM和DIMM
+
+ 
+
+　　前面我们既然提到了30线的DIMM，那么我们就来介绍一下SIMM以及与之相对应
+的DIMM。其实SIMM和DIMM都是内存条的封装形式的一种（这里说的不是芯片的封装
+形式），因为每片内存颗粒无法直接同计算机进行连接并且通讯的，并且它们单颗
+颗粒的容量有限而且涉及到前面提及的数据传输位宽等方面的原因，所以内存厂商
+需要通过一定的形式把它们组织到一起，这样就产生了不同的内存封装形式。
+
+　　首先我们来介绍一下SIMM，如下图（上面一条是30线DIMM内存，下面一条是72
+线DIMM内存）：
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+　　在DIMM内存中的颗粒采用了DIP（Dual Inline Package：双列直插封装）封
+装，如上图中黑色的芯片。早期的内存颗粒是直接焊接在主板上面的，这样如果一
+片内存出现故障，那么整个主板都要报废了。后来在主板上出现了内存颗粒插槽，
+这样就可以更换内存颗粒了，但是热膨胀的缘故，每使用一段时间你就需要打开机
+箱把内存颗粒按回插槽。
+
+　　除了这些原因，更重要的是我们前面提到的数据总线位宽等方面的原因使得工
+程师着手设计了SIMM（Single Inline Memory Module）封装和DIMM（Double
+Inline Memory 
+Module）的内存,它们通过主板上的内存插槽同主板进行通讯。这样的设计解决了
+原来所有的问题。SIMM内存根据引脚分为30线和72线，目前我们都很少用到了。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+ 
+
+　　SIMM Diagram：
+
+　　SIMM根据内存颗粒分布可以分为单面内存和双面内存，一般的容量为1、4、
+16MB的SIMM内存都是单面的，更大的容量的SIMM内存是双面的。在我们本文中所列
+举的TM4100GAD8就是一款30线的内存，它每次仅能传输8bit的数据－－从前面的示
+意图中我们也知道这30线引脚中有11线是地址引线，8线是数据引线，还有其它的
+控制引线，对于当时的封装工艺这已经是比较不错了。比较细心的读者会问为什么
+还有三条空信号引脚？因为这种内存的数据输出总线位宽只有8bit，所以即使将空
+信号引脚转换为地址总线提高寻址范围，但是并没有足够多的引脚用于数据的输
+出。72线的SIMM内存的容量不但可以更大，而且数据总线的位宽也得到了极大的提
+高。一条72线SIMM内存的数据总线位宽是32bit，它的数据输出能力大大提高了。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+　　DIMM是目前我们使用的内存的主要封装形式，比如SDRAM、DDR SDRAM、
+RDRAM，其中SDRAM具有168线引脚并且提供了64bit数据寻址能力。DIMM的工作电压
+一般是3.3v或者5v，并且分为unbuffered和buffered两种。上图上面的内存就是
+168线的SDRAM，而下面的内存是72线的SIMM。需要指出的是在SIMM和DIMM内存之间
+不仅仅是引脚数目的不同，另外在电气特性、封装特点上都有明显的差别，特别是
+它们的芯片之间的差别相当的大。因为按照原来内存制造方法，制造这种内存的时
+候是不需要把64个芯片组装在一起构成一个64bit的模块的，得益于今年来生产工
+艺的提高和改进，现在的高密度DRAM芯片可以具有不止一个Din和Dout信号引脚，
+并且可以根据不同的需要在DRAM芯片上制造4、8、16、32或者64条数据引脚。
+如果一个DRAM芯片具有8个数据引脚，那么这个基本储存单元一次就可以输出8bit
+的数据，而不像是在原来的TM4100GAD8 SIMM芯片中每次仅仅能输出1bit数据了。
+这样的话，如果我们需要制造一个同TM4100GAD8一样容量的内存，那么我们可以不
+使用前面所使用的4M x 1bit芯片，而是采用1M x 
+8bit芯片，这样仅仅需要4片芯片就可以得到一个容量为4MB，位宽为32bit的模
+组。芯片数目减少最直接的好处当然是可以减少功耗了，当然也简化了生产过程。
+
+　　下面的图只是为了说明这个问题而制作的，它展示的是一种72线的4MB SIMM内
+存，采用了4片1Mx8bit DRAM芯片。但是至于是不是真的有这样的一款产品我也不
+能确定，因为目前为之我找不到实际的产品相关资料，所以这个只是为了帮助大家
+理解这个问题，不要对于是否有这样的产品而斤斤计较。
+
+ 
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+　　这样一来，只要4片采用具有8bit位宽的内存颗粒就可以达到同样的容量，当
+然这样的内存条工作原理在理解的过程中比原来略微复杂一点。我们看到在上面的
+4Mbit×8bit芯片中，依然还是有10条地址总线引脚，但是/CAS和/RAS引脚却从原来
+的1条增加到4条。当然数据输入输出引脚线数目是32条。
+其实TI公司的TM124BBJ32F和TM248CBJ32F前面的我所列举的例子是比较相似的：
+
+ 
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+　　这两款内存的容量均为4MB,位宽为32bit，当然也属于DRAM了。TM124BBJ32F内
+存为单面而TM248CBJ32F双面的两种模式，不过其中单面TM124BBJ32F有些奇怪，在
+它的内存条上只有两颗内存芯片，这样每颗内存芯片应该是2MBx16bit。另外，双
+面的TM248CBJ32F由4片1Mx8bit 
+DRAM芯片组成。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(7)
+
+ 
+
+　　上面的示意图和表格是TM124BBJ32F和TM248CBJ32F的示意图和表格，我们可以
+很容易的理解它们的工作模式。
+
+　　对于TM124BBJ32F来说：因为是2MBx16bit的颗粒，所以当RAS0引脚为低电平
+时，DQ0-DQ15输出/输入引脚有效，所以它可以同时传送一个16bit数据；让RAS1引
+脚为低电平时，DQ16-DQ31输出/输入引脚有效，也可以一次传送一个16bit数据。
+
+　　对于TM248CBJ32F来说：因为是1MBx8bit的颗粒，所以情况同前面是不同的，
+当RAS0引脚为低电平时，DQ0-DQ7输出/输入引脚有效，所以它可以同时传送一个
+8bit数据；让RAS1引脚为低电平时，DQ6-DQ15输出/输入引脚有效，也可以一次传
+送一个8bit数据；让RAS2引脚为低电平时，DQ16-DQ23输出/输入引脚有效，也可以
+一次传送一个8bit数据；让RAS3引脚为低电平时，DQ24-DQ31输出/输入引脚有效，
+也可以一次传送一个8bit数据(注意这里虽然都是控制输出8bit或者16bit地址，但
+是它们之间分别代表的含义是不同的)。当然在确定地址的时候，还是需要CAS控制
+电路配合的。
+
+FPM DRAM介绍
+
+ 
+
+　　FPM DRAM（Fast Page Mode DRAM）：
+
+　　FPM DRAM也就是我们常说的快页内存。之所以称之为快页内存，因为它以4字
+节突发模式传送数据，这4个字节来自同一列或者说同一页。如何理解这种读取方
+式呢？FPM DRAM如果要突发4个字节的数据，它依然需要依次的读取每一个字节的
+数据，比如它要读取第一个字节的数据，这个时候的情况同前面介绍的DRAM读取方
+式是一样的（我们依然通过读取下面的FPM读取时序图来了解它的工作方式）：
+
+　　1、首先行地址被传送到行地址引脚，在/RAS引脚被激活之前，RAS处于预充电
+状态，CAS也处于预充电状态，当然/WE此时依然是高电平，FPM至少知道自己不会
+进行写操作。
+
+　　2、/RAS引脚被赋予低电平而被激活，行地址被送到行地址选通器，然后选择
+正确的行送到传感放大器，就在/RAS引脚被激活的同时，tRAC开始计时。
+
+　　3、CAS一直处于预充电状态，直到列地址被传送到列地址引脚并且/CAS引脚得
+到一个低电平而被激活（tCRC时间开始计时），然后下面的事情我们也应该很清楚
+了，列地址被送到列地址选通器，然后需要读取的数据位置被锁定，这个时候Dout
+引脚被激活，第一组数据就被传送到数据总线上。
+
+　　4、对于原来介绍的DRAM，这个时候一个读取周期就结束了，不过对于FPM则不
+同，在传送第一组数据期间，CAS失活（RAS依然保持着激活状态）并且进入预充电
+状态，等待第二组列地址被传送到列地址引脚，然后进行第二组数据的传输，如此
+周而复始直至4组数据全部找到并且传输完毕。
+
+　　5、当第四组数据开始传送的时候，RAS和CAS相继失活进入到预充电状态，这
+样FPM的一个完整的读取周期方告结束。FPM之所以能够实现这样的传输模式，就是
+因为所需要读取的4个字节的行地址是相同的但是列地址不同，所以它们不必为了
+得到一个相同的列地址而去做重复的工作。
+
+　　6、这样的工作模式显然相对于普通的DRAM模式节省了很多的时间，特别是节
+省了3次RAS预充电的时间和3个tRAC时间，从而进一步提高的效率。
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(8)
+
+ 
+
+　　我想你一定看到过诸如6－3－3－3这样的内存标注方法，其中的6表示从最初
+状态读取第一组数据需要6个时钟周期，而读取另外三个数据仅仅需要3个时钟周期
+就能达到目的了。需要特别指出的是，在上面的时序图中，我们并没有标注出 FPM
+DRAM进行第二个、第三个、第四个数据输出的前进行新的列地址选通的时间，但是
+从上面的示意图中我们可以看到Col.2同Data1和D2之间都没有重叠，所以这三个数
+据的输出是进行完毕一个再进行的另一个，因此再上一次数据传输完毕到下一次列
+地址传输之间还有一点小小的延迟。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(8)
+
+EDO DRAM（ Extended Data Out DRAM：扩展数据输出DRAM）：
+
+在介绍FPM的读取过程的最后我着重提到了 FPM DRAM是在上一次的数据读取完毕才
+会进行下一个数据的读取，但是对于EDO DRAM却是完全不一样的。EDO DRAM可以在
+输出数据的同时进行下一个列地址选通,我们依然结合下面的EDO读取时序图来了解
+EDO DRAM读取数据的过程：
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(9)
+
+ 
+
+　　1、RAS在结束上一次的读取操作之后，进入预充电状态，当接到读取数据的请
+求之后，行地址首先通过地址总线传输到地址引脚，在这个期间CAS依然处于预充
+电状态。
+
+　　2、/RAS引脚被激活，列地址开始经过行地址选通电路和行地址解码器进行行
+地址的选择，就在这个同时tRAC周期开始，因为是读取操作/WE引脚一直没有被激
+活，所以内存知道自己进行的是读取操作而不是写操作。
+
+　　3、在CAS依然进行预充电的过程中，列地址被送到列地址选通电路选择出来合
+适的地址，当/CAS被激活的同时tCAC周期开始，当tCAC结束的时候，需要读取的数
+据将会通过数据引脚传输到数据总线。
+
+　　4、从开始输出第一组数据的时候，我们就可以体会到EDO同FPM之间的区别
+了：在tCAC周期结束之前，CAS失活并且开始了预充电，第二组列地址传输和选通
+也随即开始，第一数据还没有输出完毕之前，下一组数据的tCAC周期就开始了－－
+显然这样进一步的节省了时间。就在第二组数据输出前，CAS再次失活为第三组数
+据传输列地址做起了准备……
+
+　　5、如此的设计使得EDO内存的性能比起FPM的性能提高了大约20-40%。
+
+　　6、正是因为EDO的速度比FPM快，所以它可以运行在更高的总线频率上。所以
+很多的EDO RAM可以运行在66MHz的频率上，并且一般标注为5－2－2－2。
+
+SDRAM介绍
+
+ 
+
+　　主要谈论我们大家都能接触到的SDRAM内存了，首先得承认SDRAM同我们之前介
+绍的异步DRAM是差别非常大的。它的基本原理同前面提到的DRAM还是基本一样的
+（比如基本存储单元都是按照阵列排列，都有RAS和CAS的概念），不过这些存储单
+元的组织和控制同DRAM就具有相当大的差别了。在前面我们讨论其它类型的内存都
+是采用了以具体的产品为例来讲述的，所以这里我们依然采用这种形式，这次我们以 
+MICRON MT48LC4M4A1 16MB SDRAM为例。
+
+　　如果你还记得我们在前面介绍的DRAM相关内容，那么应该还记得DRAM是以bank
+来组织存储单元的。因为每个内存bank的位宽是同数据总线阿位宽一样的。所以对
+于SIMM,你必须把多个SIMM放在一个bank之中来满足32bit或者64bit数据总线的要
+求。DIMM具有更多阿引脚，所以单个DIMM可以提供足够的同数据总线相适应的位宽
+－－这样每个bank只要一个DIMM就可以了。而且SDRAM更进一步的是可以在单个的
+DIMM中存在多个bank，这样不但能够满足数据总线的需要还能进一步的提高总线的
+性能。下面就让我来解释一下：
+在我们前面讨论的DRAM读取方式中，当一个读取周期结束后，/RAS和/CAS都必须停
+止激活然后有一个短暂的预充电期才能进入到下一次的读取周期中。但是一个具有
+两个bank的SDRAM的模组中，其中一个bank在进行预充电的期间另一个bank却可以
+被调用－－这样当你需要读取已经预充电的bank的数据时，就无需等待而是可以直
+接调用了。为了实现这个功能，SDRAM就需要增加对于多个bank的管理，这样就可
+以实现控制其中的bank进行预充电，并且在需要使用的时候随时调用了。这样一个
+具有两个bank的SDRAM一般会多一根叫做BA0的引脚，实现在两个bank之间的选择
+－－一般的BA0是低电平表示Bank0被选择，而BA0是高电平Bank1就会被选中。
+
+　　可见，虽然SDRAM在基本的原理上比如基本存储的结构都是基本一样的，但是
+在整个内存架构的组织上是不同的，而且在存储单元的控制上也是有着相当大的区
+别的。因为异步DRAM同处理器和芯片的时钟并没有什么关系，所以芯片组只能按照
+DRAM内存的时序要求“被动”的操作DRAM控制引脚。SDRAM因为要同CPU和芯片组共享
+时钟，所以芯片组可以主动的在每个时钟的上升沿发给引脚控制命令。
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(10)
+
+ 
+
+　　上图显示的就是MT48LC4M4A1 16MB SDRAM内存颗粒的引脚示意图，它采用了50
+引脚的TSOP封装，符合PC100规范。这种内存颗粒将同系统时钟同步运行。这种内
+存颗粒的架构1Mx16-512Kx16x2，每bank行地址数目是11，列地址数目是8。我们首
+先来介绍一下这种内存颗粒的引脚定义：A0－A10：地址输入引脚，当ACTIVE命令
+和READ/WRITE命令时，来决定使用某个bank内的某个基本存储单元。CLK：时钟信
+号输入引脚
+CKE：Clock Enable，高电平时有效。当这个引脚处于低电平期间，提供给所有
+bank预充电和刷新的操作
+/CS：芯片选择（Chip Select），SDRAM DIMM一般都是多存储芯片架构，这个引脚
+就是用于选择进行存取操作的芯片。/RAS:行地址选择(Row Address Select)。
+/CAS:列地址选择(Column Address Select)
+/WE:写入信号(Write Enable)。DQ0－DQ15:数据输入输出接口。BA：Bank地址输入
+信号引脚，BA信号决定了由激活哪一个bank、进行读写或者预充电操作；BA也用于
+定义Mode寄存器中的相关数据。NC：空引脚。DQM: 这个引脚的主要用于屏蔽输入/
+输出，功能相当于/OE引脚（ Output Enable）。VDDQ：DQ供电引脚，可以提高抗
+干扰强度。VSSQ：DQ供电接地引脚。VSS：内存芯片供电接地引脚。VDD：内存芯片
+供电引脚，提供+3.3V ±0.3V(上面的列表项目和示意图中，前面标有“/”或者“#”标
+记的表示在低电平下有效)。
+
+　　下面的表格在不同的状态下（或者说不同命令下）的各个引脚的信号。“H”代
+表高电平，“L”代表低电平，“X”代表可以是任何状态，也就是该引脚同该命令并没
+有直接的关系。功能/CS /RAS /CAS /WE DQM ADDR。COMMAND INHIBIT (NOP) H X
+X X X X 。NO OPERATION (NOP) L H H H X X。ACTIVE (选择bank并且激活相应的
+行) L L H H X Bank/Row 。READ (选择bank和列地址，并且开始突发读取) L H L
+H X Bank/Col 。WRITE (选择 bank和列地址，并且开始突发写入) L H L L X
+Bank/Col。BURST TERMINATE(停止当前的突发状态) L H H L X X 。PRECHARGE
+(让相应的bank中的行失活或者让该bank失活) L L H L X Code 。AUTO
+REFRESH(进入自动刷新模式) L L L H X X 。LOAD MODE REGISTER L L L L X Op-
+code。写入启用/输出启用 L。写入禁止/输出禁止 H。
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(10)
+
+ 
+
+　　如果你对于我们前面介绍的内容有了真的有所了解了，看到上面的芯片引脚示
+意图和各个针脚的功能示意图就基本对于SDRAM的工作工程有了一个基本的了解
+了，在下面的章节里我们就对于这个过程进行详细的介绍,首先我们对于一些基本
+的概念做一些了解。
+
+　　这条SDRAM颗粒采用了双bank（每bank 512K x 16 DRAM）的工作电压是3.3V，
+并且采用同步接口方式（所有的信号都是时钟信号的上升沿触发）。每一个512K x
+16-bitbank由2,048行乘以256列个基本存储单元构成，输出数据位宽是16 bit。
+Read和write操作都是通过突发导向模式访问SDRAM的；这种访问模式以访问指定的
+区域开始的，然后按照预先设定的方式定位其它的数据的所在。每次访问都是以
+ACTIVE命令启动的，然后仅仅跟着一个READ或者WRITE命令。不过在进行所有这些
+操作之前，SDRAM必须首先进行初始化。初始化SDRAM在上电之后，必须首先按照预
+定的方式进行初始化才能正常的运行。一旦VDD和VDDQ被同时供电并且时钟稳定下
+来，SDRAM就需要一个100微秒的延迟，在这个时间段中COMMAND INHIBIT和NOP指令
+有效，这个过程实际上就是内存的自检过程，一旦这个过程通过之后一个
+PRECHARGE命令就会紧紧随着最后一个COMMAND INHIBIT或者NOP指令而生效，这个
+期间所有的内存都处于空闲（idle）状态，随后会执行两个AUTOREFRESH周期、当
+AUTOREFRESH周期完毕之后，SDRAM为进行Mode Register编程做好了准备。因为
+Mode Register上电会引起一个为止的状态，它会在进行所有正常指令之前被载
+入。至此，初始化过程完成。
+
+MODE REGISTER介绍
+
+ 
+
+　　Mode Register一般被用于定义SDRAM运行的模式。其中包括了突发长度
+（burst length）、突发类型（burst type）、CAS延迟（CAS latency）、运行方
+式（operating mode）和写入突发模式（如Figure 1所示）。Mode Register通过
+LOAD MODE REGISTER命令进行编程，这组信息将会一直保存在Mode Register中直
+到内存掉电之后才会消失。Mode Register中的M0-M2是用来定义突发长度（burst
+length）的,M3定义突发类型(sequential或者interleaved),M4-M6定义CAS延迟,M7
+和M8定义运行模式，M9定义写入突发模式（write　burst mode）,M10和 M11目前
+保留。Mode Register必须在所有的bank都处于idle状态下才能被载入，在所有初
+始化工组都进行完毕之前，控制器必须等待一定的时间。在初始化过程中发生了任
+何非法的操作都可能导致初始化失败从而导致整个计算机系统不能启动。
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(11)
+
+ 
+
+　　突发长度（Burst Length）：
+
+　　Read和write操作都是通过突发模式访问SDRAM的，当然突发模式的长度都是在
+初始化过程中载入Mode
+Register中载入的参数，这些参数当然是由厂商或者用户定义的。在Figure 1中我
+们看到突发长度决定了READ或者WRITE命令能够访问的列地址的最大数目。对于
+sequential和interleaved这两种突发模式它们的突发长度是1、2、4、8，另外全
+页（full－page）突发模式仅仅适用于sequential类型。全页突发可以用BURST
+TERMINATE命令连接来产生任意的突发长度。保留状态（Reserved states）主要用
+于应付未来的不兼容的情况而准备的。当一个READ或者WRITE命令被发出之后，这
+个时候突发长度就被选定了。所有的访问操作都会以这个突发长度为限进行读取操
+作。当突发长度设为2时，A1-A7将会作为数据输入输出的列地址线；当突发长度设
+定为4时，A2-A7将会作为数据输入输出的列地址线；当突发长度被设定为8时，A3-
+A7将会作为数据输入输出的列地址线。
+
+　　突发类型（Burst Type）：
+突发类型主要分为两种：sequential和interleaved——主要由M3所决定。访问顺序
+主要由突发长度、突发类型和起始列地址所决定，如下表：
+
+ 
+
+菜鸟成长手册:详解内存工作原理及发展历程(11)
+
+ 
+
+　　禁止指令（COMMAND INHIBIT）和空指令（NOP）：
+
+　　这两条指令是CS信号的两个不同的状态。前面我们提到 /CS信号可以赋予芯片
+两种状态：参与工作和休息。 /CS处于未激活状态（也就是禁止指令生效的时
+候），SDRAM此时不对于任何传送到这个引脚上的指令作出反应； /CS引脚处于激
+活状态的情况下才会对于传送到引脚上的指令作出反应。空指令（NOP）这个指令
+将激活 /CS，但是它仅仅告诉芯片什么说不作——但是为什么要有这样的看似多余的
+指令呢？在后面的CAS延迟时间中我们将会涉及到。ACTIVATE、READ和 WRITE如果
+要了解基本的 READ和WRITE操作，那么你就应该需要了解这三条指令。ACTIVATE指
+令的主要就是选择一个bank并且激活相应的行； 
+READ指令就是读取指定的行的数据；WRITE指令就是在指定的bank和列中写入数据。
+
+ 
+
+1) 行地址通过地址总线传输到地址引脚（Address Bus行），当在第一个时钟周期
+的上升沿，通过ACTIVATE指令通过。/CS激活了相应的行地址－－当然确定指定的
+行之前BA0引脚会选择相应的bank。
+
+2)/WE引脚在这个过程中一直不会被激活，所以S DRAM知道它们不是进行写操作。
+
+3) 第三个时钟周期的开始，ACTVATE指令激活了/CAS并且得到指定的列地址。
+
+4) 第五个到第十个时钟周期的上升沿都会有数据输出到数据总线。
+
+我们看到SDRAM基本的读取过程非常的简单。今天就先谈到这里，在以后的文章中
+我们将会对于SDRAM相关的问题继续进行讨论。
+
+DRAM的读取过程
+
+ 
+
+　　我们还没有谈到我们都关心的一些问题，比如CAS-2和CAS-3之间的区别什么
+的。现在我们对于DRAM的基础知识已经有了一个基本的了解，下面的文章就是给大
+家介绍一些现代的内存技术。DRAM读取过程其实我们在以前的文章中已经讨论过
+DRAM的读写过程了，不过对于内存比较了解的朋友都会发现在前面的介绍中仅仅是
+对于内存的大致读取过程进行了简述，很多重要的细节都没有详细的讨论。所以我
+们在文章的这一节的内容中对于这个过程进行详细的讨论。下面就是异步内存的读
+取过程的步骤，因为异步DRAM的运行并不需要同处理器同频，它的时序信号控制、
+寻址等操作基本上说是独立控制的，也就是由内存芯片本身所控制，所以在讨论起
+来比较简单，我们仅仅需要考虑DRAM本身的情况就可以了（这个系列的文章也是本
+着循序渐进的原则让大家更好的理解内存的工作原理的）：1) 行地址通过地址总
+线传输到地址引脚。2)/RAS引脚被激活，列地址就会被放入行地址选通电路( Row
+Address Latch:在文章的前面部分我们把它翻译为列地址门闩电路)。3) 行地址解
+码器（ Row Address Decoder）选择正确的行然后送到传感放大器（ sense
+amps）。4) /WE引脚此时不被激活，所以 DRAM知道它们不是进行写操作。5) 列地
+址通过地址总线传输到地址引脚。6) /CAS引脚被激活，列地址就可以被送到列地
+址选通器（ Column Address Latch）。7) /CAS引脚也被当作输出启动信号（
+Output Enable），因为一旦/CAS信号被放到传感放大器，就因为这时需要的数据
+已经找到，所以Dout针脚开始有效，数据可以从内存中传输到系统了。8)/RAS和
+/CAS引脚停止激活，等待下一个读取命令。在内存的读取过程中，需要我们考虑的
+有两个主要类型的延迟。第一类的是连续的DRAM读操作之间的延迟。内存不可能在
+进行完一个读取操作之后就立刻进行第两个读取操作，因为DRAM的读取操作包括电
+容器的充电和放电另外还包括把信号传送出去的时间，所以在两个读取操作中间至
+少留出足够的时间让让内存进行这些方面的操作。在连续的两次读取操作之间，第
+一种类型的延迟包括 /RAS和 /CAS预充电延迟时间。在/RAS被激活并且失活之后，
+你必须给它足够的时间为下次激活做好准备。下图可以帮助你更好了解这个过程。
+
+ 
+
+
+菜鸟成长手册:详解内存工作原理及发展历程(12)
+
+ 
+
+　　/CAS预充电的过程失一样的，你只要把上图种的“RAS”换成“CAS”就可以了。从
+前面我们介绍的DRAM读取过程的8个步骤中，我们可以了解到 /RAS和/CAS预充电过
+程是依次进行的，所以我们在一定的时间里只能进行有限次数的读取操作。特别是
+在第8个步骤中，当一次读取操作周期结束之后，我们必须让 
+/RAS和/CAS引脚都失活。实际上，在你让它们失活之后，必须等待预充电过程结束
+之后才能开始下一个操作（或者还是读取操作、或者是写入操作、或者是刷新操作）。
+
+　　当然在两次读取操作之间的预充电时间不是限制DRAM速度的唯一因素。第二种
+延迟类型是叫做内部读取延迟（inside-the-read）。这种延迟同同两次读取操作
+之间的延迟非常的相似，但是不是由停止 /RAS和/CAS激活而产生的，而是由于要
+激活/RAS和/CAS而产生的。比如，行存取时间(tRAC)－－它就是在你激活RAS和数
+据最终出现在数据总线之间的时间。同样的列存取时间 (tCAC)就是激活/CAS引脚
+和数据最终出现在数据总线上之间的时间。下面的示意图可以帮助你更好的理解这
+两种类型的延迟：
+
+菜鸟成长手册:详解内存工作原理及发展历程(12)
+
+ 
+
+　　现在让我们花一点时间结合前面介绍的读取过程来研究一下上面的这张示意
+图：1) 首先看上图第一行，在预充电期间行地址通过地址总线传输到地址引脚，
+这个期间RAS未被激活，在第三行Address BUS中我们看到数据在这个期间正在行地
+址总线上，这个期间CAS也处于预充电状态；2) 依然看上图第一行， /RAS引脚被
+激活（RAS Active，灰色的部分），列地址就会被放入行地址选通电路(第三行
+Address 
+Bus中所示)，这个期间CAS依然处于预充电状态；在/RAS被激活的同时，tRAC（行
+存取时间）开始－－如上图最后一行Data Bus所示。3) 在/RAS被激活以后，行地
+址解码器（ Row Address Decoder）选择正确的行然后送到传感放大器（ sense
+amps）。4) 在这个期间/WE引脚一直处于不激活的状态，所以 DRAM知道它们不是
+进行写操作－－这个状态将一直持续到开始执行写操作才结束。5) 列地址通过地
+址总线传输到地址引脚。6) /CAS引脚被激活（如上图第三行），列地址就可以被
+送到列地址选通器（ Column Address Latch）。这个时候tCAC（列地址访问时
+间）开始计时。7) 在/CAS处于激活状态期间的末尾，/RAS停止激活－－也就大约
+在这个时间附近找到的数据被传送到数据总线进行数据传送（如图data 
+Bus）,在数据总线进行数据传输的过程中，地址总线是处于空闲状态的，它并不接
+受新的数据－－在数据开始创送的同时tRAC和tCAC都结束了。8）就在数据在数据
+总线上传输期间，/CAS引脚也被停止激活－－就是得到一个高电平，从而开始进入
+到预充电期。RAS和CAS会同时处于预充电期，直到下次/RAS被激活进入到下一个读
+取操作的周期。相信经过这样的说明大家应该了解DRAM的读取过程了。 在这个基
+础上我们就可以开始认识SIMM或者DIMM的潜伏期（latency）问题了。首先我们来
+继续澄清一下几个概念。DRAM潜伏期类型分为两种：访问时间（access time）和
+周期时间（cycle time）。其中访问时间（access time）同前面我们谈论的第二
+种类型的延迟有关，也就是同读取周期中的延迟时间；而周期时间（cycle 
+time）同我们前面谈论的第一种类型的延迟有关，也就是受到两个读取周期之间的
+延迟时间影响。当然潜伏期的时间很短，都是用纳秒来衡量的。
+
+　　对于异步 DRAM芯片，访问时间就是从行地址到达行地址引脚的时间起截至到
+数据被传输到数据引脚的时间段。这样，访问时间为60纳秒的DIMM意味着当我们下
+达读取数据的命令后，地址数据被送到地址引脚之后要等待60纳米才能达到数据输
+出引脚。周期时间，从字面上理解就是从两个连续读取操作之间的时间间隔。如何
+尽可能的减小DRAM的周期时间和访问时间是我们这篇文章后半部分将要详细的讨论
+的问题。
+
+    我们平时说到DRAM内存是多少多少纳秒,这里指的一般是访问时间（我们也会
+对于为什么采取这样的标称方法进行解释）。我们都知道访问时间越短，意味着内
+存工作频率会越高。当然内存工作频率越高，意味着可以适应外频更高的处理器。
+如果处理器的时钟周期较短，而DRAM的潜伏期较长，处理器在很多时间里都是等到
+DRAM传送数据。因此当DRAM一定时，比如时潜伏期为70纳秒，那么一颗1GHz PIII
+等待数据的时间将会比一颗 400MHz　PII处理器长。当然出现这样的现象是每个用
+户都不愿意看到的，当的使用的内存速度越慢或者说你的处理器相对越快，你的处
+理器就会由更多的性能都被这样的等待浪费了。
+
+
+
+<#>
+
+<#>
+
+<#>
+
+<#>
+
+<#>
+
+<#>
+
+顶
+    1
+
+踩
+    0
+
+  <javascript:void(0);>
+  <javascript:void(0);>
+
+  * 上一篇ARM Cortex系列内核介绍
+
+    <http://blog.csdn.net/shijiemazhenda/article/details/6774425>
+  * 下一篇arm, stepping stone, nandflash, norflash
+
+    <http://blog.csdn.net/shijiemazhenda/article/details/6775484>
+
+
+  相关文章推荐
+
+  * /•/ RAM,SRAM,SDRAM工作原理 之一
+    <http://blog.csdn.net/lanstone/article/details/52622735>
+  * /•/ RAM,SRAM,SDRAM工作原理 之三
+    <http://blog.csdn.net/canjiangsu/article/details/6161356>
+  * /•/ SDRAM SRAM 工作原理
+    <http://blog.csdn.net/anne20072010/article/details/6067332>
+  * /•/ FPGA第一篇：SRAM工作原理
+    <http://blog.csdn.net/qq_30866297/article/details/51198224>
+  * /•/ SDRAM的工作原理
+    <http://blog.csdn.net/a14730497/article/details/28649655>
+
+  * /•/ SDRAM工作原理
+    <http://blog.csdn.net/sinat_19306445/article/details/41047971>
+  * /•/ SDRAM工作原理
+    <http://blog.csdn.net/hzn407487204/article/details/5380999>
+  * /•/ SDRAM工作原理及时序分析
+    <http://blog.csdn.net/qq_17308321/article/details/50994760>
+  * /•/ SDRAM工作原理
+    <http://blog.csdn.net/Bobsweetie/article/details/41308215>
+
+
+      参考知识库
+
+img <http://lib.csdn.net/base/architecture>
+
+
+            大型网站架构知识库
+
+            <http://lib.csdn.net/base/architecture>
+
+    8826/关注//|/727/收录/
+
+更多资料请参考：
+猜你在找
+    Android核心技术——Android数据存储
+    <http://edu.csdn.net/course/detail/3676>
+    360度解析亚马逊AWS数据存储服务 <http://edu.csdn.net/course/detail/873>
+    Android中的数据存储 <http://edu.csdn.net/course/detail/4299>
+    Android之数据存储 <http://edu.csdn.net/course/detail/3004>
+    顾荣：开源大数据存储系统Alluxio（原Tachyon）的原理分析与案例简介
+    <http://edu.csdn.net/course/detail/2513>
+    云端存储的基本技巧和上云实践——清宵教你玩转云存储一：数据上云的基本实
+    践 <http://edu.csdn.net/course/detail/2698>
+    iOS开发高级专题—数据存储 <http://edu.csdn.net/course/detail/1709>
+    开源大数据技术架构设计 <http://edu.csdn.net/course/detail/1489>
+    Ceph—分布式存储系统的另一个选择 <http://edu.csdn.net/course/detail/1487>
+    大数据治理技术核心，可扩展的元数据架构设计
+    <http://edu.csdn.net/course/detail/3275>
+    Android核心技术——Android数据存储
+    <http://edu.csdn.net/course/detail/3676>
+    360度解析亚马逊AWS数据存储服务 <http://edu.csdn.net/course/detail/873>
+    Android中的数据存储 <http://edu.csdn.net/course/detail/4299>
+    Android之数据存储 <http://edu.csdn.net/course/detail/3004>
+    顾荣：开源大数据存储系统Alluxio（原Tachyon）的原理分析与案例简介
+    <http://edu.csdn.net/course/detail/2513>
+    云端存储的基本技巧和上云实践——清宵教你玩转云存储一：数据上云的基本实
+    践 <http://edu.csdn.net/course/detail/2698>
+    iOS开发高级专题—数据存储 <http://edu.csdn.net/course/detail/1709>
+    开源大数据技术架构设计 <http://edu.csdn.net/course/detail/1489>
+    Ceph—分布式存储系统的另一个选择 <http://edu.csdn.net/course/detail/1487>
+    大数据治理技术核心，可扩展的元数据架构设计
+    <http://edu.csdn.net/course/detail/3275>
+
+关闭
+查看评论
+
+  暂无评论
+
+您还没有登录,请[登录] <javascript:void(0);>或[注册]
+<http://passport.csdn.net/account/register?from=http%3A%2F%2Fblog.csdn.net%2Fshijiemazhenda%2Farticle%2Fdetails%2F6774914>
+* 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场
+快速回复 TOP
+
+
+          核心技术类目 <http://www.csdn.net/tag/>
+
+全部主题 <http://www.csdn.net/tag> Hadoop <http://g.csdn.net/5272865>
+AWS <http://g.csdn.net/5272866> 移动游戏 <http://g.csdn.net/5272870>
+Java <http://g.csdn.net/5272871> Android <http://g.csdn.net/5272872> iOS
+<http://g.csdn.net/5272873> Swift <http://g.csdn.net/5272868> 智能硬件
+<http://g.csdn.net/5272869> Docker <http://g.csdn.net/5272867> OpenStack
+<http://g.csdn.net/5272925> VPN <http://www.csdn.net/tag/vpn> Spark
+<http://g.csdn.net/5272924> ERP <http://www.csdn.net/tag/erp> IE10
+<http://www.csdn.net/tag/ie10> Eclipse <http://www.csdn.net/tag/eclipse>
+CRM <http://www.csdn.net/tag/crm> JavaScript
+<http://www.csdn.net/tag/javascript> 数据库
+<http://www.csdn.net/tag/%E6%95%B0%E6%8D%AE%E5%BA%93> Ubuntu
+<http://www.csdn.net/tag/ubuntu> NFC <http://www.csdn.net/tag/nfc> WAP
+<http://www.csdn.net/tag/wap> jQuery <http://www.csdn.net/tag/jquery> BI
+<http://www.csdn.net/tag/bi> HTML5 <http://www.csdn.net/tag/html5>
+Spring <http://www.csdn.net/tag/spring> Apache
+<http://www.csdn.net/tag/apache> .NET <http://www.csdn.net/tag/.net> API
+<http://www.csdn.net/tag/api> HTML <http://www.csdn.net/tag/html> SDK
+<http://www.csdn.net/tag/sdk> IIS <http://www.csdn.net/tag/iis> Fedora
+<http://www.csdn.net/tag/fedora> XML <http://www.csdn.net/tag/xml> LBS
+<http://www.csdn.net/tag/lbs> Unity <http://www.csdn.net/tag/unity>
+Splashtop <http://www.csdn.net/tag/splashtop> UML
+<http://www.csdn.net/tag/uml> components
+<http://www.csdn.net/tag/components> Windows Mobile
+<http://www.csdn.net/tag/windowsmobile> Rails
+<http://www.csdn.net/tag/rails> QEMU <http://www.csdn.net/tag/qemu> KDE
+<http://www.csdn.net/tag/kde> Cassandra
+<http://www.csdn.net/tag/cassandra> CloudStack
+<http://www.csdn.net/tag/cloudstack> FTC <http://www.csdn.net/tag/ftc>
+coremail <http://www.csdn.net/tag/coremail> OPhone
+<http://www.csdn.net/tag/ophone> CouchBase
+<http://www.csdn.net/tag/couchbase> 云计算
+<http://www.csdn.net/tag/%E4%BA%91%E8%AE%A1%E7%AE%97> iOS6
+<http://www.csdn.net/tag/iOS6> Rackspace
+<http://www.csdn.net/tag/rackspace> Web App
+<http://www.csdn.net/tag/webapp> SpringSide
+<http://www.csdn.net/tag/springside> Maemo
+<http://www.csdn.net/tag/maemo> Compuware
+<http://www.csdn.net/tag/compuware> 大数据
+<http://www.csdn.net/tag/%E5%A4%A7%E6%95%B0%E6%8D%AE> aptech
+<http://www.csdn.net/tag/aptech> Perl <http://www.csdn.net/tag/perl>
+Tornado <http://www.csdn.net/tag/tornado> Ruby
+<http://www.csdn.net/tag/ruby> Hibernate
+<http://www.csdn.net/tag/hibernate> ThinkPHP
+<http://www.csdn.net/tag/thinkphp> HBase <http://www.csdn.net/tag/hbase>
+Pure <http://www.csdn.net/tag/pure> Solr <http://www.csdn.net/tag/solr>
+Angular <http://www.csdn.net/tag/angular> Cloud Foundry
+<http://www.csdn.net/tag/cloudfoundry> Redis
+<http://www.csdn.net/tag/redis> Scala <http://www.csdn.net/tag/scala>
+Django <http://www.csdn.net/tag/django> Bootstrap
+<http://www.csdn.net/tag/bootstrap>
+
+    个人资料
+
+    [访问我的空间] <http://my.csdn.net/shijiemazhenda>
+    shijiemazhenda <http://my.csdn.net/shijiemazhenda>
+    <javascript:void(0);> <javascript:void(0);>
+      o 访问：41953次
+      o 积分：654
+      o 等级：
+        积分：654
+      o 排名：千里之外
+      o 原创：24篇
+      o 转载：6篇
+      o 译文：0篇
+      o 评论：7条
+
+    文章搜索
+
+    文章分类
+
+  * ARM <http://blog.csdn.net/shijiemazhenda/article/category/803542>(4)
+  * c和指针
+    <http://blog.csdn.net/shijiemazhenda/article/category/791340>(15)
+  * linux <http://blog.csdn.net/shijiemazhenda/article/category/791335>(6)
+  * C++ <http://blog.csdn.net/shijiemazhenda/article/category/886805>(4)
+
+    文章存档
+
+  * 2011年10月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/10>(1)
+  * 2011年09月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/09>(9)
+  * 2011年05月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/05>(1)
+  * 2011年04月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/04>(3)
+  * 2011年03月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/03>(14)
+  * 2011年02月
+    <http://blog.csdn.net/shijiemazhenda/article/month/2011/02>(2)
+    展开
+
+    阅读排行 
+
+  * pathmunge详解
+    <http://blog.csdn.net/shijiemazhenda/article/details/6192864>(8227)
+  * 统计二进制中1的个数
+    <http://blog.csdn.net/shijiemazhenda/article/details/6785674>(5974)
+  * RAM,SRAM,SDRAM工作原理（很长）
+    <http://blog.csdn.net/shijiemazhenda/article/details/6774914>(4362)
+  * H-JTAG:flash id does not match
+    <http://blog.csdn.net/shijiemazhenda/article/details/6247530>(1815)
+  * linux内存寻址
+    <http://blog.csdn.net/shijiemazhenda/article/details/6826323>(1487)
+  * float精度和数值范围
+    <http://blog.csdn.net/shijiemazhenda/article/details/6228626>(1282)
+  * 共享内存：shmat：invalid argument
+    <http://blog.csdn.net/shijiemazhenda/article/details/6865365>(1227)
+  * 操作符的优先级和求值顺序——C语言
+    <http://blog.csdn.net/shijiemazhenda/article/details/6231500>(1166)
+  * 虚拟机，samba服务：路径太深，无法复制
+    <http://blog.csdn.net/shijiemazhenda/article/details/6192771>(1095)
+  * winrar bz2
+    <http://blog.csdn.net/shijiemazhenda/article/details/6251046>(765)
+
+    评论排行
+
+  * pathmunge详解
+    <http://blog.csdn.net/shijiemazhenda/article/details/6192864>(3)
+  * winrar bz2
+    <http://blog.csdn.net/shijiemazhenda/article/details/6251046>(2)
+  * 统计二进制中1的个数
+    <http://blog.csdn.net/shijiemazhenda/article/details/6785674>(1)
+  * class sizeof
+    <http://blog.csdn.net/shijiemazhenda/article/details/6791358>(1)
+  * 第六章——指针
+    <http://blog.csdn.net/shijiemazhenda/article/details/6241520>(0)
+  * 共享内存：shmat：invalid argument
+    <http://blog.csdn.net/shijiemazhenda/article/details/6865365>(0)
+  * float精度和数值范围
+    <http://blog.csdn.net/shijiemazhenda/article/details/6228626>(0)
+  * 第四章——语句
+    <http://blog.csdn.net/shijiemazhenda/article/details/6226583>(0)
+  * 第三章——数据
+    <http://blog.csdn.net/shijiemazhenda/article/details/6226145>(0)
+  * 第一章 <http://blog.csdn.net/shijiemazhenda/article/details/6220128>(0)
+
+    推荐文章
+
+      o * 5月书讯：流畅的Python，终于等到你！
+        <http://blog.csdn.net/turingbooks/article/details/72416875>
+      o *【新收录】CSDN日报 —— Kotlin 专场
+        <http://blog.csdn.net/blogdevteam/article/details/72526177>
+      o * Android中带你开发一款自动爆破签名校验工具kstools
+        <http://blog.csdn.net/jiangwei0910410003/article/details/70483088>
+      o * Android图片加载框架最全解析——深入探究Glide的缓存机制
+        <http://blog.csdn.net/guolin_blog/article/details/54895665>
+      o * Android 热修复 Tinker Gradle Plugin解析
+        <http://blog.csdn.net/lmj623565791/article/details/72667669>
+      o * Unity Shader-死亡溶解效果
+        <http://blog.csdn.net/puppet_master/article/details/72455945>
+
+    最新评论
+
+  * 统计二进制中1的个数
+    <http://blog.csdn.net/shijiemazhenda/article/details/6785674#comments>
+
+    Dablelv <http://blog.csdn.net/K346K346>: 字体颜色太难看了，可以改一下！
+
+  * pathmunge详解
+    <http://blog.csdn.net/shijiemazhenda/article/details/6192864#comments>
+
+    大伟007 <http://blog.csdn.net/huangwei666666>: 解释的详细，真心谢谢楼主
+
+  * winrar bz2
+    <http://blog.csdn.net/shijiemazhenda/article/details/6251046#comments>
+
+    YaojingCN <http://blog.csdn.net/YaojingCN>: 原来加个.tar就可以了，晕
+
+  * winrar bz2
+    <http://blog.csdn.net/shijiemazhenda/article/details/6251046#comments>
+
+    YaojingCN <http://blog.csdn.net/YaojingCN>: +1，也是解压uboot时遇到啊
+
+  * class sizeof
+    <http://blog.csdn.net/shijiemazhenda/article/details/6791358#comments>
+
+    unixoracle <http://blog.csdn.net/unixoracle>: x写得太好了
+
+  * pathmunge详解
+    <http://blog.csdn.net/shijiemazhenda/article/details/6791358#comments>
+
+    lyglary <http://blog.csdn.net/lyglary>: 写的不错，很受用
+
+  * pathmunge详解
+    <http://blog.csdn.net/shijiemazhenda/article/details/6791358#comments>
+
+    jcreatorgx <http://blog.csdn.net/jcreatorgx>: 学习一个
+
+    公司简介
+
+    <http://www.csdn.net/company/about.html>|招贤纳士
+
+    <http://www.csdn.net/company/recruit.html>|广告服务
+
+    <http://www.csdn.net/company/marketing.html>|联系方式
+
+    <http://www.csdn.net/company/contact.html>|版权声明
+
+    <http://www.csdn.net/company/statement.html>|法律顾问
+
+    <http://www.csdn.net/company/layer.html>|问题报告
+
+    <mailto:webmaster@csdn.net>|合作伙伴
+
+    <http://www.csdn.net/friendlink.html>|论坛反馈
+
+    <http://bbs.csdn.net/forums/Service>
+    网站客服
+
+    <javascript:void(0);>杂志客服
+
+    <http://wpa.qq.com/msgrd?v=3&uin=2251809102&site=qq&menu=yes>微博客服
+
+    <http://e.weibo.com/csdnsupport/profile>webmaster@csdn.net
+
+    <mailto:webmaster@csdn.net>400-660-0108|北京创新乐知信息技术有限公司
+    版权所有|江苏知之为计算机有限公司|江苏乐知网络技术有限公司
+    京 ICP 证 09002463 号|Copyright © 1999-2017, CSDN.NET, All Rights
+    Reserved GongshangLogo
+
+    <http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001032100010>
+
+您有*0*条新通知
+<javascript:void%200>
+收藏助手
+
+
+      提问
+
+您的问题将会被发布在“技术问答 <http://ask.csdn.net/>”频道×
+
+<#>
+该问题已存在，请勿重复提问
+插入链接
+本地上传 <#tab_upload>网络图片 <#tab_weburl>
+插入图片
+/|//|//|//|//|/<http://ask.csdn.net/pages/markdown>/|/
+
+  
+
+ 
+ 
+000:0
+推荐标签：
+我要悬赏币
+取消 <#>发布 <#>
+可能存在类似的问题：
+我想提一个新问题
+
+
+      保存代码片
+
+整理和分享保存的代码片，请访问代码笔记
+<https://code.csdn.net/snippets_manage>
+
+  * *标题
+  * *描述
+  *  标签
+    工作x <javascript:;>存储x <javascript:;>64bitx
+    <javascript:;>commandx <javascript:;>制造x <javascript:;>vssx
+    <javascript:;>
+
+取消
+
+<javascript:;>确定
+
+<javascript:;>
+
+
+      保存代码片
+
+整理和分享保存的代码片，请访问代码笔记
+<https://code.csdn.net/snippets_manage>
+
+  * *标题
+  * *描述
+  *  标签
+    工作x <javascript:;>存储x <javascript:;>64bitx
+    <javascript:;>commandx <javascript:;>制造x <javascript:;>vssx
+    <javascript:;>
+
+取消
+
+<javascript:;>确定
+
+<javascript:;>
