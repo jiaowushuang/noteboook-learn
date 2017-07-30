@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-24T21:14:40</DateModified>
+  <DateModified>2017-07-24T09:30:58</DateModified>
   <ModuleName>ov5640_vga</ModuleName>
   <SummaryTimeStamp>2017-06-22T20:57:23</SummaryTimeStamp>
-  <SavedFilePath>E:/05_USB/26_ov5640_vga/26_ov5640_vga_normal/iseconfig/ov5640_vga.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/05_USB/26_ov5640_vga/26_ov5640_vga_normal\</ImplementationReportsDirectory>
+  <SavedFilePath>G:/gitDoc/noteboook-learn/code-ov5640-vga-usb-normal/iseconfig/ov5640_vga.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>G:/gitDoc/noteboook-learn/code-ov5640-vga-usb-normal\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-07T10:32:59</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
