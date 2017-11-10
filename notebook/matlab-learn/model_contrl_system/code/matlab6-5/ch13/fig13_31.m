@@ -1,0 +1,1 @@
+% Chapter 13: Figure 13.31%%   Continuous- to discrete-time system conversion with %   the c2d function.  The transfer function is%%                1%     G(s) =  --------  ,%              s(s+1)%%    and the  sampling period is T=1 sec.%num=[1]; den=[1 1 0]; sysc=tf(num,den)T=1;sysd=c2d(sysc,T,'zoh') 

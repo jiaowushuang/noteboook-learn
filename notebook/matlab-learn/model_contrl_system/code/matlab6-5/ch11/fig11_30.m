@@ -1,0 +1,1 @@
+% Chapter 11: Figure 11.30%%   Step response for the automatic test system%   with K=240, K1=1, K2=0.35, and K3=0.05.%K=240; K1=1; K2=0.35; K3=0.05;A=[0 1 0;0 -1 1; -K*K1 -K*K2 -(5+K*K3)];B=[0;0;K]; C=[1 0 0]; D=[0]; sys=ss(A,B,C,D);t=[0:0.01:3];step(sys,t);ylabel('y(t)')

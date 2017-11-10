@@ -1,0 +1,1 @@
+% Chapter 8: Figure 8.34%%   The Bode plot of%%                        0.5 s + 5%   G(s) = ----------------------------------------%          0.0002 s^4 + 0.0064 s^3 + 0.512 s^2 +  s%%   using the logspace function to generate %   the frequency points.%num=5*[0.1 1];den=[0.0002 0.0064 0.5120 1 0];sys=tf(num,den);w=logspace(-1,3,200);bode(sys,w);

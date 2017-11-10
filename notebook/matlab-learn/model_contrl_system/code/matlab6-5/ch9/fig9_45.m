@@ -1,0 +1,1 @@
+% Chapter 9: Figure 9.45%%   The Nichols chart of%%                    1 %   G(s) = -------------------------  .%            0.2 s^3 + 1.2 s^2 +  s %%num=[1]; den=[0.2 1.2 1 0 ];sys=tf(num,den);w=logspace(-1,1,400);nichols(sys,w);ngrid

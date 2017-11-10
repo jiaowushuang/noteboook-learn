@@ -1,0 +1,1 @@
+% Chapter 5: Figure 5.41%%    Compare step response for second-order approximation%num1=[6]; den1=[1 6 11 6]; sys1=tf(num1,den1);num2=[1.6]; den2=[1 2.584 1.6]; sys2=tf(num2,den2);t=[0:0.1:8];[y1,T1]=step(sys1,t);[y2,T2]=step(sys2,t);plot(T1,y1,T2,y2,'--'), gridxlabel('Time (sec)'), ylabel('Step Response')

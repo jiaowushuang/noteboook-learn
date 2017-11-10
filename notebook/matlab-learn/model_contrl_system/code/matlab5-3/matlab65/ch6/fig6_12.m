@@ -1,0 +1,1 @@
+% Chapter 6: Figure 6.12%%   Using the roots function to compute the closed-loop%   system poles of a unity feedback system with%   G(s)=1/s^3+s^2+2s+23.%numg=[1]; deng=[1 1 2 23]; sysg=tf(numg,deng);sys=feedback(sysg,[1]);pole(sys)

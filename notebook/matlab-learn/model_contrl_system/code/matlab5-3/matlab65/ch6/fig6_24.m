@@ -1,0 +1,1 @@
+% Chapter 6: Figure 6.24%Ka=100; K1=0.05;ng1=[5000]; dg1=[1 1000]; sys1=tf(ng1,dg1);ng2=[1]; dg2=[1 20 0]; sys2=tf(ng2,dg2);nc=[K1 1]; dc=[0 1]; sysc=tf(nc,dc);syso=series(Ka*sys1,sys2);sys=feedback(syso,sysc); sys=minreal(sys);t=[0:0.001:0.5];y=step(sys,t);plot(t,y)ylabel('y(t)'),xlabel('Time (seconds)'), grid

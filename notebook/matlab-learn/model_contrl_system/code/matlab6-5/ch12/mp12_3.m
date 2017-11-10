@@ -1,0 +1,1 @@
+% Chapter 12: Robust Control Systems% MP12.3%J=10; a=4; b=5; k2=20; k1=a*k2; k0=b*k2;Ji=[1:1:30];for i=1:length(Ji)  numc=[k2 k1 k0]; denc=[Ji(i) 0 0 0];  sysc=tf(numc,denc);  sys=feedback(sysc,[1]);  [Gm,Pm,Wcg,Wcp]=margin(sys);  Pm_save(i)=Pm;endplot(Ji,Pm_save), gridxlabel('J'), ylabel('Phase Margin (degrees)')

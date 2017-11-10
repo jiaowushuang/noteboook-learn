@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.44%   Using tf to create transfer functions.%num1=[10]; den1=[1 2 5];sys1=tf(num1,den1)%num2=[1]; den2=[1 1];sys2=tf(num2,den2)%sys=sys1+sys2

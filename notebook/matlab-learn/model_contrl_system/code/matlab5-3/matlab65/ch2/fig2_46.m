@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.46%   Using the pole and zero functions.%sys=tf([1 10],[1 2 1])p=pole(sys)z=zero(sys)

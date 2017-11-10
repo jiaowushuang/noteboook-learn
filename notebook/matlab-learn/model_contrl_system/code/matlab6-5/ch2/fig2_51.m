@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.51%   Application of the series function.%numg=[1];deng=[500 0 0]; sysg=tf(numg,deng);numh=[1 1];denh=[1 2]; sysh=tf(numh,denh);sys =series(sysg,sysh);sys

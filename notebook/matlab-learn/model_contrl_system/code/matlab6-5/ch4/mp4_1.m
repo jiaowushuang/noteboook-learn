@@ -1,0 +1,1 @@
+% Chapter 4: Feedback Control System Characteristics% MP4.1%num=[5]; den=[1 2 25];sys=tf(num,den);step(sys) 

@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.57%    Application of the feedback function with unity feedback.%numg=[1]; deng=[500 0 0]; sys1=tf(numg,deng);numc=[1 1]; denc=[1 2];  sys2=tf(numc,denc);sys3=series(sys1,sys2);sys=feedback(sys3,[1])

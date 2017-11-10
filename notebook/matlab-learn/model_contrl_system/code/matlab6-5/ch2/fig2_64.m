@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.64%   Step response of the traction motor wheel velocity.%num=[5400]; den=[2 2.5 5402];sys=tf(num,den);t=[0:0.005:3];[y,t]=step(sys,t);plot(t,y),gridxlabel('Time (sec)')ylabel('Wheel velocity')

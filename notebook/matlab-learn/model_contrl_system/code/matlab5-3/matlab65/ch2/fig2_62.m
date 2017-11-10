@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.62%   Application of the minreal function.%num=[1 4 6 6 5 2];den=[12 205 1066 2517 3128 2196 712];sys1=tf(num,den);sys=minreal(sys1)   

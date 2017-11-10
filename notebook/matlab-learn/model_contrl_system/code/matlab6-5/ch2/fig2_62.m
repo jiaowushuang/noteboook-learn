@@ -1,0 +1,1 @@
+% Chapter 2: Figure 2.62%   Electric traction motor block reduction.%num1=[10];den1=[1 1]; sys1=tf(num1,den1);num2=[1];den2=[2 0.5]; sys2=tf(num2,den2);num3=[540];den3=[1]; sys3=tf(num3,den3);num4=[0.1];den4=[1]; sys4=tf(num4,den4);sys5=series(sys1,sys2);sys6=feedback(sys5,sys4);sys7=series(sys3,sys6);sys=feedback(sys7,[1])

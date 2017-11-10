@@ -1,0 +1,1 @@
+% Chapter 13: Digital Control Systems% MP13.1%num=[0.2145 0.1609]; den=[1 -0.75 0.125];sys=tf(num,den,1);step(sys,[0:1:50]) 

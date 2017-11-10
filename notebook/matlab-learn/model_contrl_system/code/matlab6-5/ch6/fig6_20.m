@@ -1,0 +1,1 @@
+% Chapter 6: Figure 6.20%%   Jump-jet control system 3-D stability region.%[p,z]=meshgrid(1.2:0.2:10,0.1:.2:10);k=p.*(p-1)./(p-1-z);mesh(k)

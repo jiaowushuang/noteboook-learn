@@ -1,0 +1,1 @@
+% Chapter 5: Figure 5.44%%    Ka=30 is currently selected.  You can select Ka=60 and re-run.%Ka=30;t=[0:0.01:1];nc=[Ka*5];dc=[1]; sysc=tf(nc,dc);ng=[1];dg=[1 20 0]; sysg=tf(ng,dg);sys1=series(sysc,sysg);sys=feedback(sys1,[1]);[y,T]=step(sys,t);plot(T,y), gridxlabel('Time (sec)')ylabel('y(t)')

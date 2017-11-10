@@ -1,0 +1,1 @@
+% Chapter 6: The Stability of Linear Feedback Systems% MP6.3%numg=[1 1]; deng=[1 4 6 10]; sysg=tf(numg,deng);sys=feedback(sysg,[1])r=pole(sys)

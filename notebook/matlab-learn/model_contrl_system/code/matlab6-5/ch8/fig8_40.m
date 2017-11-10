@@ -1,0 +1,1 @@
+% Chapter 8: Figure 8.40%%   The step response of the engraving machine, where%%                 2%   T(s) =  ------------- . %           s^3+3s^2+2s+2 %K=2; num=[K]; den=[1 3 2 K];sys=tf(num,den);t=[0:0.01:20];step(sys,t);xlabel('Time (sec)'), ylabel('y(t)')

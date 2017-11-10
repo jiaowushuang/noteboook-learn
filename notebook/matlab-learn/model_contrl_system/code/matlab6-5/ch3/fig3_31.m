@@ -1,0 +1,1 @@
+% Chapter 3: Figure 3.31%   Convert G(s) = (2s^2+8s+6)/(s^3+8s^2+16s+6) %   to a state-space representation.%num=[2 8 6]; den=[1 8 16 6]; sys_tf=tf(num,den);sys_ss=ss(sys_tf)
